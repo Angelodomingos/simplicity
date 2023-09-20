@@ -7,8 +7,22 @@
     /* Varia para a paletas de cor pára o site  */
     --cor-titulo:#4d4d4d;
     --cor-texto:#333;
-    --cor-escura:#fff;
-    --cor-clara:#000;
+    --cor-clara:#fff;
+    --cor-escura:#000;
     --cor-intermediaria:#ececec;
 }
 html{ font-size: 16px;}
+
+
+body{
+    color: var(--cor-texto);
+    font-family: "Noto Sans",sans-serif;
+    background-color: var(--cor-clara);
+}
+
+/* CSS Resert, em alguns alementos*/
+body,h1,h2,p, figure,menu{
+    margin: 0;
+    padding: 0;
+}
+img{max-width: 100%;}
