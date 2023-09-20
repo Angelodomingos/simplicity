@@ -103,3 +103,30 @@ da manipulação progrmada com JavaScript.*/
     /* Aplicamos um fundo a lista evitando a dficuldade de leitura dos links*/
     background-color: var(--cor-clara);
 }
+
+
+/* Estilizando a seção de Destaque */
+
+
+
+
+
+/* Estilizando a seção de Destaque */
+.destaque  {
+    height: 500px; 
+    background-image: url(../imagens/fundo-destaque.jpg);
+    background-attachment: fixed;
+    background-size: cover; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.destaque h2{
+    color: var(--cor-clara);
+
+}
+.destaque p{
+    color: var(--cor-clara);
+}
