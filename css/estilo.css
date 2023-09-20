@@ -21,7 +21,7 @@ body{
 }
 
 /* CSS Resert, em alguns alementos*/
-body,h1,h2,p, figure,menu{
+body,h1,h2,p, figure,.menu{
     margin: 0;
     padding: 0;
 }
@@ -45,7 +45,7 @@ header{
     align-items: center;
     justify-content: space-between;
 }
-.menu{ list-style: none;}
+
 
 /*Formatação da palavra Menu */
 nav h2 a{
@@ -58,8 +58,16 @@ nav h2 a:hover,nav h2 a:focus, .menu a:hover, .menu a:focus{
     background-color: var(--cor-intermediaria);
 }
 
-.menu{ list-style: none;}
-/* Rehgra ´para formatar os links contidos lista/menu*/
+.menu{ 
+    list-style: none;
+
+    /*ATENÇÃO
+    Usamos display:none para 
+    não exibir inicialmente a lista de links. */
+    display: none;
+}
+
+/* Regra ´para formatar os links contidos lista/menu*/
 .menu a {
     color: var(--cor-escura); 
     font-weight:bold;
@@ -70,4 +78,28 @@ nav h2 a:hover,nav h2 a:focus, .menu a:hover, .menu a:focus{
     height: 50px;
 
    
+}
+
+/* Seletor de classes combinadas estas regras somente irão funcionar quando as DUAS CLASSE estiverem aplicada JUNTAS no elemento HTML(no caso, lista de menu/lins).
+
+
+OBS.:esta combinação sera possivel por meio 
+da manipulação progrmada com JavaScript.*/
+.menu.aberto {
+
+    /*O Flex fará a lista de links aparecer  */
+    display: flex;
+
+    /*com os links em formato de coluna(vertical) */
+    flex-direction: column;
+
+
+    /* Usamos as propriedades de posicionamento e coordenadas pára garantir o encaixe correto 
+    (abaixo do titulo e da palavra Menu).)*/
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    /* Aplicamos um fundo a lista evitando a dficuldade de leitura dos links*/
+    background-color: var(--cor-clara);
 }
