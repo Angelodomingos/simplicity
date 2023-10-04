@@ -386,7 +386,7 @@ button{
 button:hover,button:focus{
     background-color: var(--cor-clara);
     color: var(--cor-escura);
-    box-shadow: var(--cor-escura) 0 0 2px;
+    box-shadow: var(--cor-escura) 0 0 2px  ;
 }
 
 
