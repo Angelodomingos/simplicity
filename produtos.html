@@ -3,65 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simplicity</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <title>Produtos - Simplicity</title>
+    
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- CSS Interno: 
+    No caso de conflito, as regras criadas aqui SEMPRE irão prevalecer. -->
+    <style>
+        .conteudo h2::before { content: "🛒 "; }
+    </style>
 </head>
 <body>
+    
     <header>
-        <h1><a href="index.html">Simplicity</a> </h1>
-        <nav>
-            <h2><a href="">Menu &equiv;</a></h2>
+        <div class="limitador">
+            <h1><a href="index.html">Simplicity</a></h1>
+            <nav>
+                <h2><a href="">Menu &equiv; </a></h2>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-            <ul class="menu">
-                <li><a href="">Home</a></li>
-                <li><a href="">Produtos</a></li>
-                <li><a href="">Serviço</a></li>
-                <li><a href="">Contato</a></li>
-            </ul>
-        </nav>
-</header>
-
-<main>
-    <article class="destaque">
-       
-        <h2>HTML & CSS & JS</h2>
-        <p>A porta de entreda para </p>
-        
-    </article>
+    <main>
+        <article class="limitador conteudo produtos">
+            <h2>Produtos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis expedita similique ab et inventore a quod fuga rerum. Autem facilis aliquam molestiae quia nisi ipsum voluptatem suscipit veritatis deserunt ratione!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit obcaecati nihil sed vel tempore, aliquid, enim, ipsam accusantium totam iste voluptates illum repellendus? At quaerat voluptas voluptate maxime quasi accusantium?</p>
 
 
-    <article class="front-end">
-        <h2>Desenvolvimento Front-End</h2>
-        <p>O desenvolvidor front font-andé o profissional que cuida da parte do codigo que é intepretado direitamente  pelo <i>navegador,</i> </p>
-        <p>No  Desenvolvimento por camada <abbr title="Hyper Text Markup Language">HTML </abbr> é o responsavel pela marcação de conteúdo , e o  <abbr title="Cascading styli Sheets">CSS</abbr> cuida do estrilo visula e o JavaScript é o responsavel pelo comportamento</p>
-       <figure><img src="imagens/tecnologias.png" alt="Logotipo das linguagens Html,CSS e JavaScript"></figure>
-       
+            <table>
+                <caption>Nossos produtos</caption>
+                <tr>
+                    <th>Produto</th>
+                    <th>Prazo de entrega</th>
+                    <th>Valor aproximado</th>
+                </tr>
+                <tr>
+                    <td>Website</td>
+                    <td>30 dias</td>
+                    <td>7.500,00</td>
+                </tr>
+                <tr>
+                    <td>Aplicativo</td>
+                    <td>60 dias</td>
+                    <td>15.000,00</td>
+                </tr>
+                <tr>
+                    <td>Game</td>
+                    <td>45 dias</td>
+                    <td>10.000,00</td>
+                </tr>
+                <tr>
+                    <td>Loja Virtual</td>
+                    <td>60 dias</td>
+                    <td>9.500,00</td>
+                </tr>
+            </table>
+
+
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis expedita similique ab et inventore a quod fuga rerum. Autem facilis aliquam molestiae quia nisi ipsum voluptatem suscipit veritatis deserunt ratione!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis expedita similique ab et inventore a quod fuga rerum. Autem facilis aliquam molestiae quia nisi ipsum voluptatem suscipit veritatis deserunt ratione!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis expedita similique ab et inventore a quod fuga rerum. Autem facilis aliquam molestiae quia nisi ipsum voluptatem suscipit veritatis deserunt ratione!</p>
+
         </article>
 
-        
-    <article class="historia">
-        <h2>Historia </h2>
-        <iframe  height="720" src="https://www.youtube.com/embed/jlkvzcG1UMk" title="A Internet das coisas, explicada pelo NIC.br" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </article>
-
-
-
-    <article class="localizacao">
-        <h2>localização</h2>
-        <address>
-            Rua Francisco Coimbra, 483
-            penha - São Paulo/SP <br>
-            Telefone: <a href="tel:1121350300">(11) 2135-0300</a><br>
-            E-mail: <a href="mailto:penha@sp.senac.br">penha@sp.senac.br</a>
-        </address>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3857.206097533348!2d-46.5417657952584!3d-23.5259652705957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5e45de28bb23%3A0x1d2ed3122aae28a7!2sSenac%20Penha!5e1!3m2!1spt-PT!2sbr!4v1695150946525!5m2!1spt-PT!2sbr"  height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </article>
-</main>
+    </main>
 
     <footer>
-        <p>Simplicity é um site fictício desenvolvido para fins educacionais &copy; <b>Senac penha</b>
-        - <time>2023</time></p>
+        <p>Simplicity é um site fictício desenvolvido
+        para fins educacionais &copy; <b>Senac Penha</b>
+         - <time>2023</time> </p>
     </footer>
+
+
 
 </body>
 </html>
