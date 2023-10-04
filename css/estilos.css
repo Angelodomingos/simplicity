@@ -345,10 +345,57 @@ tanto com mouse quanto com teclado. */
 
 
 
+/*Regras para o formulário */
+form{
+    max-width: 5000px;
+    margin: auto;
+    background-color: var();
+}
+input,select,textarea {
+    border: none;
+    padding: 4px;
+    height: 40px;
+    border-radius: 4px;
+}
+textarea{height: auto;}
+
+form div{
+    display: flex;
+    justify-content: space-between;
+    align-items: 1rem;
+    margin-top: 1rem;
+}
+
+label{
+    font-size: 0.9rem;
+    font-weight: bold;
+    width: 70%;
+
+}
+
+button{
+    background-color: var(--cor-escura);
+    color: var(--cor-clara);
+    border: none;
+    font-weight: bold;
+    padding: 1rem 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover,button:focus{
+    background-color: var(--cor-clara);
+    color: var(--cor-escura);
+    box-shadow: var(--cor-escura) 0 0 2px;
+}
 
 
 
 
+/* Pseudo-class :not()
+Primite criar exceções para uma regra.
+Manter exemplo, estamos aplicando 70%/*/
+form div *:not(label){width: 80%;}
 
 /* Exercícios: regras condicionais (Media Queries) */
 
