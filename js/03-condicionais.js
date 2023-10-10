@@ -1,4 +1,4 @@
-console.log("testo")
+
 
 
 /*Estruturas de controle Condicional
@@ -17,8 +17,11 @@ let usario = "Angelo"
 let idade = 25;
 
 //verificar a idade de determinar se o menor ou maior //
-is(idade >= 18){
+if (idade >= 18){
     console.log(`${usario} é maior de idade`);
 } else {
     console.log(`${usario} é menor de idade`);
 }
+
+
+console.log(`${usario} é..... de idade`)
