@@ -18,12 +18,26 @@ let idade = prompt("Quantos anos voce tem?");
 let mensagem;
 
 //verificar a idade de determinar se o menor ou maior //
-if (idade >= 18) {
-    mensagem = "maior"
+//if (idade >= 18) {
+    //mensagem = "maior"
+//} else {
+    //mensagem = "menor"
+//}
+
+
+//console.log(`${usario} é ${mensagem} de idade`)
+//alert(`${usario} é ${mensagem} de idade`)
+
+
+if(idade >= 60 ){
+    mensagem = "idosa";
+} else if(idade >= 18){
+    mensagem = " adulto(a)";
 } else {
-    mensagem = "menor"
+    mensagem = "menor";
 }
 
-
-console.log(`${usario} é ${mensagem} de idade`)
-alertAngelo(`${usario} é ${mensagem} de idade`)
+console.log(`${usario} você tem ${idade} anos e é
+considerado ${mensagem}, `);
+alert(`${usario} você tem ${idade} anos e é 
+considerado ${mensagem},`);
