@@ -13,15 +13,17 @@ comando mais comuns : if(se), else(senão se)
 */
 
 
-let usario = "Angelo"
-let idade = 25;
+let usario = prompt("Qual é o seu nome");
+let idade = prompt("Quantos anos voce tem?");
+let mensagem;
 
 //verificar a idade de determinar se o menor ou maior //
-if (idade >= 18){
-    console.log(`${usario} é maior de idade`);
+if (idade >= 18) {
+    mensagem = "maior"
 } else {
-    console.log(`${usario} é menor de idade`);
+    mensagem = "menor"
 }
 
 
-console.log(`${usario} é..... de idade`)
+console.log(`${usario} é ${mensagem} de idade`)
+alertAngelo(`${usario} é ${mensagem} de idade`)
